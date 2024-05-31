@@ -6,7 +6,7 @@ import { Search } from "../components/Search";
 import { Modal } from "../components/Modal";
 import { useModal } from "../service/ModalService";
 
-type Data = {
+export type Data = {
     id: number;
     name: string;
     lotNumber: string;
