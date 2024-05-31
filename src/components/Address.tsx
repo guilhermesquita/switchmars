@@ -16,7 +16,7 @@ export const Address = (data: Data) => {
             <article className="flex justify-between">
                 <p className="font-IBM font-bold text-[#8C7E7E] text-xl">{data.planet}</p>
                 <article className="flex gap-2">
-                    <Link to={`/Edit/${data.id}`}>
+                    <Link to={`/Edit/${data.id}/${data.name}/${data.planet}/${data.lotNumber}`}>
                         <FontAwesomeIcon icon={faPen} style={{ color: "#000000", }} />
                     </Link>
                     <button>
