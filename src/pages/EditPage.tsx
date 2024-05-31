@@ -45,7 +45,7 @@ export const EditPage = () => {
                         className="w-full h-12 placeholder:font-IBM placeholder:font-bold rounded-2xl outline-0 border-2 items-center gap-2 pl-5 duration-500 border-black h-16"
                     />
                 </article>
-                <article className="w-full flex justify-between items-center gap-10">
+                <article className="w-full flex md:flex-row flex-col justify-center items-center md:gap-10 gp-5">
                     <article className="flex flex-col w-full gap-2">
                         <label className="font-IBM font-bold text-3xl">Lote</label>
                         <input type="text" placeholder="Lote de 4 dígitos"

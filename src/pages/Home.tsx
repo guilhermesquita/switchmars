@@ -27,7 +27,7 @@ export const Home = () => {
     return (
         <main className="flex w-4/6 color-white pt-10 flex-col gap-10 pb-5">
             <section className="w-full flex flex-row gap-5 justify-between">
-                <Search />
+                {/* <Search /> */}
                 <ButtonAddress openModal={openModal} />
                 <Modal isOpen={isModalOpen} closeModal={closeModal} />
             </section>
