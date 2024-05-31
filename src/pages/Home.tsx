@@ -33,7 +33,7 @@ export const Home = () => {
             </section>
             {data ? (
                 data.map((dat) => (
-                    <Address key={dat.id} name={dat.name} lotNumber={dat.lotNumber} planet={dat.planet} />
+                    <Address key={dat.id} name={dat.name} lotNumber={dat.lotNumber} planet={dat.planet} id={dat.id}/>
                 ))
             ) : (
                 <section className="pt-20 text-center">

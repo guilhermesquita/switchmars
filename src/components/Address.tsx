@@ -1,10 +1,12 @@
 import { faPen, faTrash } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Link } from "react-router-dom"
 
 interface Data {
     name: string,
     lotNumber: string,
-    planet: string
+    planet: string,
+    id: number
   }
 
 export const Address = (data: Data) => {
@@ -14,9 +16,9 @@ export const Address = (data: Data) => {
             <article className="flex justify-between">
                 <p className="font-IBM font-bold text-[#8C7E7E] text-xl">{data.planet}</p>
                 <article className="flex gap-2">
-                    <button>
+                    <Link to={`/Edit/${data.id}`}>
                         <FontAwesomeIcon icon={faPen} style={{ color: "#000000", }} />
-                    </button>
+                    </Link>
                     <button>
                         <FontAwesomeIcon icon={faTrash} style={{ color: "#CB3131", }} />
                     </button>
