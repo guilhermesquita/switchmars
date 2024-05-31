@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       fontFamily:{
         'IBM': ['IBM Plex Sans', 'ui-sans-serif','system-ui'],
+      },
+      colors:{
+        'bgModal': 'rgb(0,0,0,0.7)'
       }
     },
   },
